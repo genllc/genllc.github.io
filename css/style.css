@@ -427,7 +427,7 @@ a:focus {
 }
 
 .service_section {
-  background-color: #031652;
+  background-color: #6f42c1;
   margin-bottom: 90px;
 }
 
@@ -548,7 +548,7 @@ a:focus {
 }
 
 .client_section {
-  background-image: url(../images/client-bg.jpg);
+  background-image: url(../img/background/bg-1.png);
   color: #ffffff;
   text-align: center;
 }
@@ -755,7 +755,7 @@ a:focus {
 
 /* end contact section */
 .info_section {
-  background-color: #010b2c;
+  background-color: #6f42c1;
   color: #ffffff;
   padding: 90px 0 45px 0;
 }
