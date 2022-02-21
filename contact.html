@@ -46,6 +46,7 @@
  <link href="css-pn/theme-plugin.css" rel="stylesheet" type="text/css">
  <!--== style -->
  <link href="css-pn/style.css" rel="stylesheet" type="text/css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body class="sub_page">
@@ -124,7 +125,7 @@
       <div class="">
         <div class="row">
           <div class="col-md-6 ">
-            <form action="">
+            <form id="submit-form" action="">
               <div class="contact_form-container">
                 <div>
                   <div>
@@ -157,6 +158,26 @@
       </div>
     </div>
   </section>
+
+  <script>
+    $("#submit-form").submit((e)=>{
+    e.preventDefault()
+    $.ajax({
+    url:"https://script.google.com/macros/s/AKfycbwE41D00_MQX0bpcvPTy2WLeMWz32asEfM7vLzuDZpMcEDqRkBVT8Mtow/exec",
+    data:$("#submit-form").serialize(),
+    method:"post",
+    success:function (response){
+    alert("One of our team will be in contact with you shortly. Thank you!")
+    window.location.reload()
+    //window.location.href="https://google.com"
+    },
+    error:function (err){
+    alert("Something Error")
+    
+    }
+    })
+    })
+    </script>
 
   <!-- end contact section -->
 
