@@ -118,7 +118,7 @@
 
 @media (max-width: 576px) {
   .slider_section .detail-box h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 55px;
   }
 }
@@ -129,8 +129,8 @@
 
 @media (max-width: 376px) {
   .slider_section .detail-box h1 {
-    font-size: 2rem;
-    line-height: 40px;
+    font-size: 3rem;
+    line-height: 45px;
   }
 }
 
