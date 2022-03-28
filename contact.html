@@ -8,9 +8,9 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="GENUINE INTERNATIONAL WORKSHOP EQUIPMENT LLC" />
-  <meta name="description" content="GENUINE INTERNATIONAL WORKSHOP EQUIPMENT LLC" />
-  <meta name="author" content="GENUINE INTERNATIONAL WORKSHOP EQUIPMENT LLC" />
+  <meta name="keywords" content="Genuine offers an extensive range of garage equipment including a high diversity of compressors, lifts, tools, machines, and cleaning equipment." />
+  <meta name="description" content="Genuine offers an extensive range of garage equipment including a high diversity of compressors, lifts, tools, machines, and cleaning equipment." />
+  <meta name="author" content="https://genuineuae.com/" />
 
   <title>Genuine</title>
   <link rel="icon" href="img/logo/favicon.ico">
@@ -47,6 +47,23 @@
  <!--== style -->
  <link href="css-pn/style.css" rel="stylesheet" type="text/css">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ <script>
+	var isNS = (navigator.appName == "PN") ? 1 : 0;
+	if(navigator.appName == "PN") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+	function mischandler(){
+	return false;
+	}
+	function mousehandler(e){
+	var myevent = (isNS) ? e : event;
+	var eventbutton = (isNS) ? myevent.which : myevent.button;
+	if((eventbutton==2)||(eventbutton==3)) return false;
+	}
+	document.oncontextmenu = mischandler;
+	document.onmousedown = mousehandler;
+	document.onmouseup = mousehandler;
+	</script>
+
 </head>
 
 <body class="sub_page">
@@ -257,17 +274,20 @@
           <div class="info_form ">
            
             <div class="social_box">
-              <a href="">
-                <img src="images/fb.png" alt="">
+              <a href="https://api.whatsapp.com/send?phone=971504802957&amp;text=" target="_blank">
+                  <img src="images/whatsapp--v2.gif" alt="" width="30" height="30">
+                </a>
+              <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook-new--v2.gif" alt="" width="30" height="30">
               </a>
-              <a href="">
-                <img src="images/twitter.png" alt="">
+              <a href="https://twitter.com/?lang=en" target="_blank">
+                <img src="images/twitter--v3.gif" alt="" width="30" height="30">
               </a>
-              <a href="">
-                <img src="images/linkedin.png" alt="">
+              <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/linkedin--v2.gif" alt="" width="30" height="30">
               </a>
-              <a href="">
-                <img src="images/instagram.png" alt="">
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram-new--v2.gif" alt=""  width="30" height="30">
               </a>
             </div>
           </div>
